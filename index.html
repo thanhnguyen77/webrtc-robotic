@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebRTC</title>
+        <script src="jquery.js"></script>
+        <script src="peer.js"></script>
+        <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+        <script src="socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js" integrity="sha512-zN6KYOtONNTOGXz0RkWX2EpavN9VdIs+2w+To+fhciFv83YA9maUpi2lzZWrOfKXdFIZZomWufBznkyHi3a8oQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <h3 id="my-peer">Your Id:</h3>
+        <video id="localStream" width="300" controls></video>
+        <br /><br />
+        <video id="remoteStream" width="300" controls></video>
+        <br /><br />
+        <input id="remoteId" type="text" placeholder="REMOTE ID">
+        <button id="btnCall">Call</button>
+        <br /><br />
+        <input id="txtUserName" type="text" placeholder="UserName">
+        <button id="btnSignUp">SignUp</button>
+    </body>
+    <script src="main.js"></script>
+</html>
